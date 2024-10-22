@@ -151,7 +151,7 @@ jobs:
         run: |
           [ -e files ] && mv files/ openwrt/files/
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-          sed -i 's/^[ \t]*//g' ./.config
+          sed -i 's/^[ \t]*//g' openwrt/.config
           make defconfig
  
       - name: Run custom-script-2
