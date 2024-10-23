@@ -60,7 +60,7 @@ rm -rf package/feeds/luci/luci/luci-theme-design
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/feeds/luci/luci-theme-infinityfreedom
 #git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/feeds/luci/luci-theme-opentopd
 #git clone https://github.com/thinktip/luci-theme-neobird.git package/feeds/luci/luci-theme-neobird
-git clone https://github.com/gngpp/luci-theme-design.git package/feeds/luci/luci-theme-design
+git clone https://github.com/SAENE/luci-theme-design.git package/feeds/luci/luci-theme-design
 git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
 git clone -b master https://github.com/jerrykuku/luci-app-argon-config.git package/feeds/luci/luci-app-argon-config
 
