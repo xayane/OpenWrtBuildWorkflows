@@ -167,10 +167,10 @@ jobs:
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
           sudo timedatectl set-timezone $TIME_ZONE
-          sudo chown $USER:$GROUPS /home/runner/work/OpenWrtBuildWorkflows/OpenWrtBuildWorkflows/workdir/
+          sudo chown $USER:$GROUPS /home/runner/work/OpenWrtBuildWorkflows/OpenWrtBuildWorkflows/
 
       - name: Clone source code
-        working-directory: /home/runner/work/OpenWrtBuildWorkflows/OpenWrtBuildWorkflows/workdir
+        working-directory: /home/runner/work/OpenWrtBuildWorkflows/OpenWrtBuildWorkflows/
         run: |
           df -hT $PWD
           git clone --depth 1 --branch $REPO_BRANCH --single-branch $REPO_URL openwrt/
