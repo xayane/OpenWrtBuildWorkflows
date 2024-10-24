@@ -13,7 +13,8 @@
 #-------------------------------------------------------------------------------------------------------
 
 # Workflow name which is showed in GitHub Actions.
-name: Build Example-Firmware for Example-Device
+#name: Build Example-Firmware for Example-Device
+name: template
 
 on:
   workflow_dispatch:
