@@ -16,9 +16,6 @@
 name: Build immortalwrt for x64
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
     inputs:
       force-build:
