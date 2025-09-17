@@ -63,6 +63,8 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git pac
 git clone https://github.com/SAENE/luci-theme-design.git package/feeds/luci/luci-theme-design
 git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
 git clone -b master https://github.com/jerrykuku/luci-app-argon-config.git package/feeds/luci/luci-app-argon-config
+git clone -b js https://github.com/sirpdboy/luci-theme-kucat package/feeds/luci/luci-theme-kucat
+git clone https://github.com/sirpdboy/luci-theme-kucat-config package/feeds/luci/luci-theme-kucat-config
 
 #6.添加自动挂载磁盘脚本
 #mkdir -p files/etc/hotplug.d/block && wget -O files/etc/hotplug.d/block/30-usbmount https://raw.githubusercontent.com/ficheny/P3TERX_Actions-OpenWrt/main/files/etc/hotplug.d/block/30-usbmount && chmod 755 files/etc/hotplug.d/block/30-usbmount
@@ -145,8 +147,10 @@ sed -i 's|luci-theme-bootstrap|luci-theme-design|g' feeds/luci/collections/luci/
 [ -e package/lean/default-settings/files/zzz-default-settings ] && git_sparse_clone master https://github.com/immortalwrt/packages immortalwrt net/miniupnpd && mv -n miniupnpd feeds/packages/net/miniupnpd
 
 #替换luci-app-socat为https://github.com/chenmozhijin/luci-app-socat
-rm -rf feeds/luci/applications/luci-app-socat
-git_sparse_clone main "https://github.com/chenmozhijin/luci-app-socat" "temp" luci-app-socat && mv -n luci-app-socat package/luci-app-socat
+#rm -rf feeds/luci/applications/luci-app-socat
+#git_sparse_clone main "https://github.com/chenmozhijin/luci-app-socat" "temp" luci-app-socat && mv -n luci-app-socat package/luci-app-socat
+#更换为lucky插件
+git clone  https://github.com/gdy666/luci-app-lucky.git feeds/package/lucky
 
 
 ./scripts/feeds update -a
