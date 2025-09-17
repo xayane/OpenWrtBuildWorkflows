@@ -149,9 +149,6 @@ sed -i 's|luci-theme-bootstrap|luci-theme-design|g' feeds/luci/collections/luci/
 #替换luci-app-socat为https://github.com/chenmozhijin/luci-app-socat
 #rm -rf feeds/luci/applications/luci-app-socat
 #git_sparse_clone main "https://github.com/chenmozhijin/luci-app-socat" "temp" luci-app-socat && mv -n luci-app-socat package/luci-app-socat
-#更换为lucky插件
-git clone  https://github.com/gdy666/luci-app-lucky.git feeds/package/lucky
-
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
