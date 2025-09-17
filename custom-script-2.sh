@@ -51,19 +51,19 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 #[ -e package/lean/default-settings/files/zzz-default-settings ] && rm -rf feeds/luci/themes/luci-theme-argon && git clone -b master https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 #[ -e package/lean/default-settings/files/zzz-default-settings ] && rm -rf feeds/luci/themes/luci-theme-design && git_sparse_clone main "https://github.com/fichenx/packages" "temp" luci-theme-design && mv -n luci-theme-design feeds/luci/themes/luci-theme-design
 #[ -e package/lean/default-settings/files/zzz-default-settings ] && rm -rf feeds/luci/applications/luci-app-design-config && git_sparse_clone main "https://github.com/fichenx/packages" "temp" luci-app-design-config && mv -n luci-theme-design feeds/luci/applications/luci-app-design-config
-rm -rf package/feeds/luci/luci-theme-argon
-rm -rf package/feeds/luci/luci-app-argon-config
-rm -rf package/feeds/luci/luci-theme-infinityfreedom
-rm -rf package/feeds/luci/luci/luci-theme-design
+#rm -rf package/feeds/luci/luci-theme-argon
+#rm -rf package/feeds/luci/luci-app-argon-config
+#rm -rf package/feeds/luci/luci-theme-infinityfreedom
+#rm -rf package/feeds/luci/luci/luci-theme-design
 #rm -rf package/feeds/luci/luci-theme-opentopd
 #rm -rf package/feeds/luci/luci-theme-neobird
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/feeds/luci/luci-theme-infinityfreedom
+#git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/feeds/luci/luci-theme-infinityfreedom
 #git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/feeds/luci/luci-theme-opentopd
 #git clone https://github.com/thinktip/luci-theme-neobird.git package/feeds/luci/luci-theme-neobird
-git clone https://github.com/SAENE/luci-theme-design.git package/feeds/luci/luci-theme-design
-git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
-git clone -b master https://github.com/jerrykuku/luci-app-argon-config.git package/feeds/luci/luci-app-argon-config
-git clone -b js https://github.com/sirpdboy/luci-theme-kucat package/feeds/luci/luci-theme-kucat
+#git clone https://github.com/SAENE/luci-theme-design.git package/feeds/luci/luci-theme-design
+#git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
+#git clone -b master https://github.com/jerrykuku/luci-app-argon-config.git package/feeds/luci/luci-app-argon-config
+#git clone -b js https://github.com/sirpdboy/luci-theme-kucat package/feeds/luci/luci-theme-kucat
 git clone https://github.com/sirpdboy/luci-theme-kucat-config package/feeds/luci/luci-theme-kucat-config
 
 #6.添加自动挂载磁盘脚本
