@@ -38,7 +38,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   BUILD_DEPENDS:  "flex bison g++ gawk git libncurses5-dev libssl-dev python3-setuptools rsync swig unzip zlib1g-dev file wget \
-                   autoconf automake binutils bison bzip2 cpio curl flex gawk \
+                   autoconf automake binutils bison bzip2 cpio curl flex gawk clang \
                    git haveged libtool p7zip p7zip-full patch pkgconf python3 \
                    rsync squashfs-tools swig texinfo upx-ucl unzip vim wget xxd zlib1g-dev file nano aria2"
   # CONFIG_FILE is the name of your own config files for compiling, you should upload these files into the root 
