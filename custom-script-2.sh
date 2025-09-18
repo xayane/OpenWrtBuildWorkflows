@@ -71,7 +71,7 @@ git clone https://github.com/sirpdboy/luci-app-kucat-config package/feeds/luci/l
 
 #7.修改主机名
 #sed -i "s/hostname='OpenWrt'/hostname='Redmi-AX6'/g" package/base-files/files/bin/config_generate
-sed -i "s/hostname='ImmortalWrt'/hostname='R2 Max for YaYa'/g" package/base-files/files/bin/config_generate
+#sed -i "s/hostname='ImmortalWrt'/hostname='R2 Max for YaYa'/g" package/base-files/files/bin/config_generate
 
 #8.修改插件位置
 #sed -i '/sed -i "s\/services\/system\/g" \/usr\/lib\/lua\/luci\/controller\/cpufreq.lua/d'  package/lean/default-settings/files/zzz-default-settings
@@ -102,7 +102,7 @@ sed -i 's|set luci.main.mediaurlbase|#set luci.main.mediaurlbase|g' feeds/luci/t
 sed -i 's|set luci.main.mediaurlbase|#set luci.main.mediaurlbase|g' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 sed -i 's|set luci.main.mediaurlbase|#set luci.main.mediaurlbase|g' feeds/luci/themes/luci-theme-material/root/etc/uci-defaults/30_luci-theme-material
 #sed -i 's|set luci.main.mediaurlbase|#set luci.main.mediaurlbase|g' feeds/luci/themes/luci-theme-netgear/root/etc/uci-defaults/30_luci-theme-netgear
-sed -i 's|luci-theme-bootstrap|luci-theme-design|g' feeds/luci/collections/luci/Makefile
+#sed -i 's|luci-theme-bootstrap|luci-theme-design|g' feeds/luci/collections/luci/Makefile
 
 #为lede源恢复mac80211v5.15.33驱动依赖kmod-qcom-qmi-helpers
 # [ -e package/lean/default-settings/files/zzz-default-settings ] && echo '' >> package/kernel/linux/modules/other.mk
